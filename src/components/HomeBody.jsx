@@ -1,25 +1,27 @@
 import React from "react";
-import pfp from "../assets/image.png"
+import pfp from "../assets/austin-pfp.png"
 
 const HomeBody = () => {
   return (
-    <div className="mt-7 grid grid-cols-1 md:grid-cols-4 gap-4">
+    <div className="mt-7 mx-6 grid grid-cols-1 md:grid-cols-4 gap-4">
       <div className="flex flex-col mr-4">
         <div className="mt-2 mb-10">
           <img className='rounded-full' src={pfp} alt='austin-picture'></img>
         </div>
-        <div className="bg-[#595C70] text-white font-jet rounded-2xl py-10 px-4">
-          <p>Austin Greer</p>
-          <p>A Quick Overview About Me!</p>
-          <p>-Recently earned a  Bachelor's in Computer Engineering</p>
-          <p>-Pursuing a Master's in Computer Science, focusing on Software Development.</p>
-          <p>-Had 3 internships with each being in different fields of Computer Science</p>
-          <p>-Loves Python, but have used several other languages and development tools</p>
-          <p>-Currently looking for opportunities!</p>
+        <div className="bg-[#595C70] text-white font-jet rounded-2xl py-2 px-4 flex flex-col">
+          <p className="my-1 mx-auto px-4 border-2 text-[26px]">Austin Greer</p>
+          <p className="max-w-48 mx-auto my-1 text-center text-[20px]">A Quick Overview About Me!</p>
+          <ul className="list-disc mx-7 my-3 text-[16px]">
+            <li className="mb-4">Recently earned a  Bachelor's in Computer Engineering.</li>
+            <li className="mb-4">Pursuing a Master's in Computer Science, focusing on Software Development.</li>
+            <li className="mb-4">Had 3 internships with each being in different fields of Computer Science.</li>
+            <li className="mb-4">Loves Python, but have used several other languages and development tools.</li>
+            <li className="mb-4">Currently looking for opportunities!</li>
+          </ul>
         </div>
       </div>
       <div className="bg-[#595C70] text-white text-[20px] font-jet rounded-2xl py-10 px-4 md:col-span-3">
-        <p>
+        <p className="mx-4">
           Welcome to my website! <br/><br/> I'm Austin, a recent graduate from the
           University of Tennessee, Knoxville, with a Bachelor's in Computer
           Engineering. Throughout undergrad, I took classes in both Computer
