@@ -1,8 +1,8 @@
 import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+// import {
+//   VerticalTimeline,
+//   VerticalTimelineElement,
+// } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
 
@@ -29,19 +29,125 @@ const ExperienceBody = () => {
           </p>
         </div>
       </div>
-      <div>
-        <VerticalTimeline>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-            contentArrowStyle={{ borderRight: "9px solid  rgb(33, 150, 243)" }}
-            date="2011 - present"
-            iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          ></VerticalTimelineElement>
-          <h3 className="vertical-timeline-element-title"> Company: Cadre5</h3>
-          <h3 className="vertical-timeline-element-title"> Position: Software Engineering Intern</h3>
-        </VerticalTimeline>
+
+      <div className="mt-10 mb-20 sm:mx-40 mx-10">
+        <ol className="relative border-s border-white ">
+          <li className="mb-10 ms-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white ">
+              <svg
+                className="w-2.5 h-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <h3 className="ml-2 font-bold font-jet text-3xl text-white">
+              Cadre5
+            </h3>
+            <h4 className="ml-2 font-jet text-2xl text-white">
+              January 2024 - May 2024
+            </h4>
+            <h5 className="ml-2 mb-4 text-xl font-jet text-white">
+              Software Engineering Intern
+            </h5>
+            <p className="ml-2 font-jet text-[18px] text-white">
+              Cadre5 is a Knoxville based company that specializes in designing
+              and building software for various contractors. The software they
+              build ranges from front-end to back-end development....
+            </p>
+            <button className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full">
+              Learn More!
+            </button>
+          </li>
+
+          <li className="mb-10 ms-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white ">
+              <svg
+                className="w-2.5 h-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <h3 className="ml-2 font-bold font-jet text-3xl text-white">
+              Trimble
+            </h3>
+            <h4 className="ml-2 font-jet text-2xl text-white">
+              May 2023 - August 2023
+            </h4>
+            <h5 className="ml-2 mb-4 text-xl font-jet text-white">
+              Hardware Testing Intern
+            </h5>
+            <p className="ml-2 font-jet text-[18px] text-white">
+              Trimble is an American company that specializes in software,
+              hardware, and services technology. They support global industries
+              in construction, agriculture....
+            </p>
+            <button className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full">
+              Learn More!
+            </button>
+          </li>
+
+          <li className="ms-6">
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white ">
+              <svg
+                className="w-2.5 h-2.5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
+              </svg>
+            </span>
+            <h3 className="ml-2 font-bold font-jet text-3xl text-white">
+              The American Bureau of Shipping
+            </h3>
+            <h4 className="ml-2 font-jet text-2xl text-white">
+              September 2022 - May 2023
+            </h4>
+            <h5 className="ml-2 mb-4 text-xl font-jet text-white">
+              Intern for Digital Team
+            </h5>
+            <p className="ml-2 font-jet text-[18px] text-white">
+              The American Bureau of Shipping (ABS) is a global leader in
+              classification services for marine and offshore assets. They aim
+              to provide advancing technology and data analytics to their
+              members....
+            </p>
+            <button className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full">
+              Learn More!
+            </button>
+          </li>
+        </ol>
       </div>
+
+      {/* <div>
+        <div className="absolute top-[60%] left-[50%] border-l-white border-dashed border-l-4 max-w-1 mt-20 mb-60 py-[24rem]"></div>
+        <div className="grid grid-cols-2 grid-rows-3 mt-10">
+          <div className="flex">
+            <div className="text-white font-jet text-[20px] text-center m-auto">
+              January 2024 - May 2024
+            </div>
+            <div className="absolute top-[68%] left-[48%] h-6 w-16 bg-white rounded-full "></div>
+          </div>
+          <div className="bg-[#595C70] p-20 m-10 rounded-2xl "></div>
+          <div className="bg-[#595C70] p-20 m-10 rounded-2xl"></div>
+          <div className="text-white font-jet text-[20px] text-center m-auto">
+            May 2023 - August 2023
+          </div>
+          <div className="text-white font-jet text-[20px] text-center m-auto">
+            September 2022 - May 2023
+          </div>
+          <div className="bg-[#595C70] p-20 m-10 rounded-2xl"></div>
+        </div>
+      </div> */}
     </div>
   );
 };
