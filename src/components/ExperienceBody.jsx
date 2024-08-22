@@ -1,12 +1,24 @@
+import { useNavigate } from "react-router-dom";
 import React from "react";
-// import {
-//   VerticalTimeline,
-//   VerticalTimelineElement,
-// } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
 
 const ExperienceBody = () => {
+  let navigate = useNavigate();
+  const redirectPage = (company) => {
+    console.log(company)
+    let path = "/experience";
+    if (company === "cadre5") {
+      path = path + "/austin-cadre5";
+      navigate(path);
+    } else if (company === "trimble") {
+      path = path + "/austin-trimble";
+      navigate(path);
+    } else {
+      path = path + "/austin-abs";
+      navigate(path);
+    }
+  };
   return (
     <div>
       <div className="mt-7 mx-6 border-b">
@@ -58,7 +70,10 @@ const ExperienceBody = () => {
               and building software for various contractors. The software they
               build ranges from front-end to back-end development....
             </p>
-            <button className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full">
+            <button
+              className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full"
+              onClick={() => redirectPage("cadre5")}
+            >
               Learn More!
             </button>
           </li>
@@ -89,7 +104,10 @@ const ExperienceBody = () => {
               hardware, and services technology. They support global industries
               in construction, agriculture....
             </p>
-            <button className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full">
+            <button
+              className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full"
+              onClick={() => redirectPage("trimble")}
+            >
               Learn More!
             </button>
           </li>
@@ -121,33 +139,15 @@ const ExperienceBody = () => {
               to provide advancing technology and data analytics to their
               members....
             </p>
-            <button className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full">
+            <button
+              className="bg-white text-black font-jet text-[16px] p-2 mt-3 ml-2 rounded-full"
+              onClick={() => redirectPage("abs")}
+            >
               Learn More!
             </button>
           </li>
         </ol>
       </div>
-
-      {/* <div>
-        <div className="absolute top-[60%] left-[50%] border-l-white border-dashed border-l-4 max-w-1 mt-20 mb-60 py-[24rem]"></div>
-        <div className="grid grid-cols-2 grid-rows-3 mt-10">
-          <div className="flex">
-            <div className="text-white font-jet text-[20px] text-center m-auto">
-              January 2024 - May 2024
-            </div>
-            <div className="absolute top-[68%] left-[48%] h-6 w-16 bg-white rounded-full "></div>
-          </div>
-          <div className="bg-[#595C70] p-20 m-10 rounded-2xl "></div>
-          <div className="bg-[#595C70] p-20 m-10 rounded-2xl"></div>
-          <div className="text-white font-jet text-[20px] text-center m-auto">
-            May 2023 - August 2023
-          </div>
-          <div className="text-white font-jet text-[20px] text-center m-auto">
-            September 2022 - May 2023
-          </div>
-          <div className="bg-[#595C70] p-20 m-10 rounded-2xl"></div>
-        </div>
-      </div> */}
     </div>
   );
 };
